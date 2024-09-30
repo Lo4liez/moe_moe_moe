@@ -1,28 +1,25 @@
-<html>
-  <head>
-    <title>Create a Button in JavaScript</title>
-  </head>
-
-  <body>
-    <!-- Empty <body> HTML (the JavaScript code in <script> will generate a button here)-->
-
-    <script>
-      // Create a button element
-      const button = document.createElement('button')
-
-      // Set the button text to 'Can you click me?'
-      button.innerText = 'Can you click me?'
-
-      button.id = 'mainButton'
-
-      // Attach the "click" event to your button
-      button.addEventListener('click', () => {
-        // When there is a "click"
-        // it shows an alert in the browser
-        alert('Oh, you clicked me!')
-      })
-
-      document.body.appendChild(button)
-    </script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator with Two Inputs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <h2>My freaking great imposible incredible wonderful perfect best wow!! calculator</h2>
+        <input type="number" id="input1" placeholder="Enter first number">
+        <input type="number" id="input2" placeholder="Enter second number">
+        <div>
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="calculate('/')">/</button>
+        </div>
+        <h2>Hell yeah: <span id="result">0</span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
