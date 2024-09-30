@@ -11,5 +11,9 @@ if ('serviceWorker' in navigator) {
 }
  
 function sayHello() {
-    document.getElementById('hello').innerText = 'Hello world';
+    const Button = document.createElement("button")
+
+    Button.innerText = 'Can you click me'
+
+    Button.addEventListener('click', () => {alert ('hell yeah')})
 }
